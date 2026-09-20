@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost Parcel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">NIGHT SHIFT DELIVERY</p>
+        <h1>Lost Parcel</h1>
+      </div>
+      <button id="restartButton" class="restart">Restart</button>
+    </header>
+
+    <section class="hud" aria-label="Game status">
+      <div><span>Parcels</span><strong id="parcelCount">0 / 3</strong></div>
+      <div><span>Time</span><strong id="timer">60</strong></div>
+      <div><span>Score</span><strong id="score">0</strong></div>
+    </section>
+
+    <section class="game-card">
+      <canvas id="gameCanvas" width="900" height="560" aria-label="Lost Parcel game board"></canvas>
+      <div id="message" class="message" role="status">
+        <h2>Find the lost parcels</h2>
+        <p>Use the arrow keys, WASD, or the controls below.</p>
+        <button id="startButton" class="primary">Start game</button>
+      </div>
+    </section>
+
+    <div class="controls" aria-label="Touch controls">
+      <button data-key="ArrowUp" aria-label="Move up">▲</button>
+      <div>
+        <button data-key="ArrowLeft" aria-label="Move left">◀</button>
+        <button data-key="ArrowDown" aria-label="Move down">▼</button>
+        <button data-key="ArrowRight" aria-label="Move right">▶</button>
+      </div>
+    </div>
+
+    <p class="tip">Collect all three parcels, then reach the blue delivery van before time runs out.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
