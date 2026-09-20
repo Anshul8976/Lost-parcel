@@ -37,6 +37,7 @@ canvas { display: block; width: 100%; height: auto; aspect-ratio: 900 / 560; }
 .message p { margin: 0 0 18px; color: #cbc6bc; }
 .primary { border-radius: 999px; background: var(--accent); color: #19130a; padding: 12px 22px; font-weight: 800; }
 .secondary { display: block; margin: 10px auto 0; border: 1px solid #596474; border-radius: 999px; background: transparent; padding: 9px 20px; color: var(--ink); }
+select { display: block; margin: 0 auto 12px; border: 1px solid #596474; border-radius: 999px; background: #20252e; color: var(--ink); padding: 9px 18px; }
 .controls { display: grid; justify-items: center; gap: 5px; margin: 18px auto 0; }
 .controls > div { display: flex; gap: 5px; }
 .controls button { width: 48px; height: 42px; border-radius: 12px; background: #292f39; color: #f4eee1; box-shadow: inset 0 -3px #15181e; }
